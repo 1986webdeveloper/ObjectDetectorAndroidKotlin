@@ -8,11 +8,11 @@ App gets the current frames from the camera and it uses this frame to get predic
 A device running Android 5.0 (API 21) or higher is required to run the demo due to the use of the camera2 API.
 
 
-<b>Requirement</b>
+<b>Requirements :</b>
 - NDK (if you have not installed you can download it from here : https://developer.android.com/ndk/downloads)
 - Tensorflow (if you have not installed you can download it from here : https://www.tensorflow.org/install)
 
-<b>Here how to use it</b>
+<b>Here how to use it :</b>
 
 - Add below code on top of your app level build.gradle file
 ```java
