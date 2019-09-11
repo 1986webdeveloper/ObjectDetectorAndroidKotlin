@@ -13,10 +13,7 @@ Requirement
 - Tensorflow (if you have not installed you can download it from here : https://www.tensorflow.org/install)
 
 Here how to use it
-- Add below code in your project level build.gradle file
-```
-classpath 'org.apache.httpcomponents:httpclient:4.5.4'
-```
+
 - Add below code on top of your app level build.gradle file
 ```
 project.buildDir = 'gradleBuild'
