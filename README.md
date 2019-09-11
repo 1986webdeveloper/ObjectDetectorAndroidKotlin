@@ -1,6 +1,6 @@
 # ObjectDetectorAndroidKotlin
 
-One of the exciting feature announced by Android is TensorFlow. TensorFlow is an end-to-end open source platform for machine learning.
+This is demonstration of Object detection with the use of TensorFlow. TensorFlow is an end-to-end open source platform for machine learning.
 
 App gets the current frames from the camera and it uses this frame to get predictions using the SSD-Mobilenet model trained using the Tensorflow Object Detection API.
 
