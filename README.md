@@ -41,7 +41,7 @@ android{
 ```
 implementation 'org.tensorflow:tensorflow-android:1.13.1'
 ```
-- OverlayView callback is used when object is tracked, which returns Canvas. So draw that canvas in camera preview insdide DetectorActivity.
+- OverlayView callback is used when object is tracked, which returns Canvas. So draw that canvas in camera preview inside DetectorActivity.
 ```
 trackingOverlay.addCallback(
         new OverlayView.DrawCallback() {
