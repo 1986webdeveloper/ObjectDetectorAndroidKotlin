@@ -8,14 +8,14 @@ App gets the current frames from the camera and it uses this frame to get predic
 A device running Android 5.0 (API 21) or higher is required to run the demo due to the use of the camera2 API.
 
 
-Requirement
+<b>Requirement</b>
 - NDK (if you have not installed you can download it from here : https://developer.android.com/ndk/downloads)
 - Tensorflow (if you have not installed you can download it from here : https://www.tensorflow.org/install)
 
-Here how to use it
+<b>Here how to use it</b>
 
 - Add below code on top of your app level build.gradle file
-```
+```java
 project.buildDir = 'gradleBuild'
 getProject().setBuildDir('gradleBuild')
 
@@ -24,7 +24,7 @@ project.ext.TMP_DIR   = project.buildDir.toString() + '/downloads'
 apply from: "download-models.gradle"
 ```
 - Add sourceSets inside android
-```
+```java
 android{
         sourceSets {
            main {
@@ -38,11 +38,11 @@ android{
 }
 ```
 - Add tensorflow in your dependencies
-```
+```gradle
 implementation 'org.tensorflow:tensorflow-android:1.13.1'
 ```
 - OverlayView callback is used when object is tracked, which returns Canvas. So draw that canvas in camera preview inside DetectorActivity.
-```
+```java
 trackingOverlay.addCallback(
         new OverlayView.DrawCallback() {
           @Override
@@ -52,6 +52,6 @@ trackingOverlay.addCallback(
         });
 ```
 
-Output:
+<b>Output:</b>
 
 ![alt text](https://github.com/1986webdeveloper/ObjectDetectorAndroidKotlin/blob/master/ezgif-4-0c8fe35564d4.gif)
